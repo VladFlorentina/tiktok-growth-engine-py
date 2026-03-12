@@ -1,0 +1,23 @@
+.page { max-width: 860px; }
+.header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+.headerIcon { font-size: 48px; }
+.title { font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+.subtitle { color: var(--text-secondary); font-size: 14px; }
+.filters { display: flex; gap: 16px; margin-bottom: 28px; }
+.filters .form-group { width: 200px; }
+.loadingState { display: flex; align-items: center; gap: 16px; padding: 40px; justify-content: center; flex-direction: column; color: var(--text-secondary); }
+.trendsList { display: flex; flex-direction: column; gap: 12px; }
+.trendCard { display: flex; align-items: flex-start; gap: 20px; justify-content: space-between; }
+.trendLeft { display: flex; align-items: flex-start; gap: 16px; flex: 1; }
+.trendRank { font-size: 24px; font-weight: 900; color: var(--text-muted); width: 32px; flex-shrink: 0; }
+.trendName { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.trendDesc { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+.trendNiches { display: flex; gap: 6px; flex-wrap: wrap; }
+.nicheBadge { font-size: 11px !important; }
+.trendRight { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; min-width: 140px; }
+.trendBadges { display: flex; gap: 6px; }
+.growthRate { font-size: 14px; font-weight: 700; }
+.viralScoreWrap { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.viralScoreLabel { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+.viralScoreNum { font-size: 22px; font-weight: 900; }
+@media (max-width: 700px) { .trendCard { flex-direction: column; } .trendRight { align-items: flex-start; } }

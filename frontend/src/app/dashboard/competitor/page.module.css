@@ -1,0 +1,29 @@
+.page { max-width: 860px; }
+.header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+.headerIcon { font-size: 48px; }
+.title { font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+.subtitle { color: var(--text-secondary); font-size: 14px; }
+.formCard { margin-bottom: 32px; }
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.errorMsg { background: rgba(255,69,58,0.1); border: 1px solid rgba(255,69,58,0.3); border-radius: var(--radius-md); padding: 12px 16px; font-size: 14px; color: var(--error); margin-bottom: 16px; }
+.analyzeBtn { width: 100%; justify-content: center; padding: 14px; font-size: 16px; gap: 10px; }
+.scoreCard { display: flex; gap: 32px; align-items: flex-start; margin-bottom: 24px; }
+.scoreLeft { text-align: center; flex-shrink: 0; }
+.scoreNum { font-size: 64px; font-weight: 900; line-height: 1; }
+.scoreLabel { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
+.analyses { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.analysisPill { background: var(--bg-secondary); border-radius: var(--radius-md); padding: 12px; }
+.analysisLabel { font-size: 13px; font-weight: 700; display: block; margin-bottom: 4px; }
+.analysisText { font-size: 13px; color: var(--text-secondary); }
+.sectionTitle { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.insightsList { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+.insightCard { border-left: 3px solid var(--success); }
+.insightStrength { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+.insightWhy { font-size: 13px; color: var(--text-secondary); margin-bottom: 10px; }
+.stealThis { font-size: 14px; background: var(--accent-gradient-soft); border-radius: var(--radius-sm); padding: 10px 14px; }
+.stealThis span { font-weight: 700; }
+.actionsCard { }
+.actionsTitle { font-size: 17px; font-weight: 700; margin-bottom: 14px; }
+.actionsList { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.actionsList li { font-size: 14px; color: var(--text-secondary); }
+@media (max-width: 600px) { .scoreCard { flex-direction: column; } .formRow { grid-template-columns: 1fr; } }

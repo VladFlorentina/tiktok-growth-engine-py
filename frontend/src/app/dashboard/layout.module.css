@@ -1,0 +1,103 @@
+/* Dashboard Shell Layout */
+
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── Sidebar ─────────────────────────────────── */
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebarTop {
+  padding: 24px 20px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.demoBadge { font-size: 12px; }
+
+.sidebarNav {
+  padding: 16px 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: background 0.15s, color 0.15s;
+}
+
+.navItem:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.navItemActive {
+  background: var(--accent-gradient-soft);
+  color: var(--text-primary);
+  font-weight: 600;
+  border: 1px solid rgba(255, 45, 85, 0.2);
+}
+
+.navIcon { font-size: 18px; width: 24px; text-align: center; }
+
+/* ── Sidebar Bottom ──────────────────────────── */
+.sidebarBottom {
+  padding: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.planCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.planName {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.planUsage { display: flex; flex-direction: column; gap: 6px; }
+.planUsageText { font-size: 12px; color: var(--text-muted); }
+
+/* ── Main Content ────────────────────────────── */
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background: var(--bg-primary);
+}
+
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+}
